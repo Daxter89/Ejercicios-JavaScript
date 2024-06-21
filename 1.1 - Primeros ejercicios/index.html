@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio arrays</title>
+    <style>
+      .container {
+        border: 1px solid #000;
+        display: flex;
+        max-width: 500px;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center; /* Asegura que los botones estén centrados verticalmente */
+        gap: 5px; /* Espacio uniforme entre los botones */
+      }
+      .button {
+        flex: 1; /* Permite que los botones crezcan igualmente */
+        max-width: 100px; /* Limita el tamaño máximo de los botones */
+        padding: 10px; /* Añade un relleno dentro de los botones */
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Centra el texto verticalmente */
+        background-color: #f0f0f0; /* Color de fondo del botón */
+        border: 1px solid #ccc; /* Borde del botón */
+        border-radius: 5px; /* Esquinas redondeadas */
+        text-transform: lowercase; /* Minúsculas para el texto */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+      }
+    </style>
+  </head>
+  <body>
+    <script defer src="./java.js"></script>
+    <h3>Add Item</h3>
+    <div class="container">
+      <button class="button" id="push">push</button>
+      <button class="button" id="unshift">unshift</button>
+      <button class="button" id="insert_at">insert at</button>
+      <input type="number" id="number1" name="number1">
+    </div>
+        
+
+    <h3>Remove Item</h3>
+    <div class="container">
+      <button class="button" id="pop">pop</button>
+      <button class="button" id="shift">shift</button>
+      <button class="button" id="remove_at">remove at</button>
+      <input type="number" id="number2" name="number2">
+    </div>
+  </body>
+</html>
