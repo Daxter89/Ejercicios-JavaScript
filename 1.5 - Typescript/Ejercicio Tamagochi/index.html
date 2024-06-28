@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagochi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/css.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="comer" class="apartados">
+            <div class="icono-container">
+                <i class="fa-solid fa-ice-cream"></i>
+            </div>
+            <div class="icono-container">
+                <i class="fa-solid fa-carrot"></i>
+            </div>
+            <div class="vida-container">
+                <div class="vida-barra" id="vida-comer"></div>
+            </div>
+            <span class="vida-porcentaje" id="porcentaje-comer">50%</span>
+            <p>Comer</p>
+        </div>
+
+        <div id="jugar" class="apartados">
+            <div class="icono-container">
+                <i class="fas fa-gamepad"></i>
+            </div>
+            <div class="icono-container">
+                <i class="fa-solid fa-chess"></i>
+            </div>
+            <div class="vida-container">
+                <div class="vida-barra" id="vida-jugar"></div>
+            </div>
+            <span class="vida-porcentaje" id="porcentaje-jugar">50%</span>
+            <p>Jugar</p>
+        </div>
+
+        <div class="gormiti-container">
+            <div class="nombre">Boomerang</div>
+            <img src="./img/tamagochi.png" alt="foto del tamagochi" id="gormiti">
+            <div class="vida-container">
+                <div class="vida-barra" id="vida-gormiti"></div>
+            </div>
+            <span class="vida-porcentaje" id="porcentaje-gormiti">50%</span>
+        </div>
+
+        <div id="pelear" class="apartados">
+            <div class="icono-container">
+                <i class="fas fa-fist-raised"></i>
+            </div>
+            <div class="icono-container">
+                <i class="fa-solid fa-weight-hanging"></i>
+            </div>
+            <div class="vida-container">
+                <div class="vida-barra" id="vida-pelear"></div>
+            </div>
+            <span class="vida-porcentaje" id="porcentaje-pelear">50%</span>
+            <p>Pelear</p>
+        </div>
+
+        <div id="dormir" class="apartados">
+            <div class="icono-container">
+                <i class="fas fa-bed"></i>
+            </div>
+            <div class="icono-container">
+                <i class="fa-solid fa-moon"></i>
+            </div>
+            <div class="vida-container">
+                <div class="vida-barra" id="vida-dormir"></div>
+            </div>
+            <span class="vida-porcentaje" id="porcentaje-dormir">50%</span>
+            <p>Dormir</p>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

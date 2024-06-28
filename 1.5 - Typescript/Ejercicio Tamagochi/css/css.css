@@ -1,0 +1,134 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.apartados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 2rem;
+    color: white;
+    box-sizing: border-box;
+    position: relative;
+    /* Añadido para posicionamiento absoluto de elementos internos */
+}
+
+.icono-container {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+#comer {
+    background-color: lightgreen;
+}
+
+#jugar {
+    background-color: rgb(233, 233, 30);
+}
+
+#pelear {
+    background-color: lightcoral;
+}
+
+#dormir {
+    background-color: lightblue;
+}
+
+.vida-container {
+    width: 425px;
+    height: 15px;
+    background-color: #050505;
+    border: 8px solid #000;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    /* Añadido para posicionamiento absoluto de la barra de vida */
+}
+
+.vida-barra {
+    height: 100%;
+    width: 100%;
+    background-color: #08c918;
+    transition: width 0.3s;
+}
+
+.vida-porcentaje {
+    position: absolute;
+    /* Ajustar según sea necesario para que quede debajo de la barra */
+    margin-top: 75px;
+    size: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(0, 0, 0);
+    font-size: 1.50rem;
+
+}
+
+p {
+    position: absolute;
+    margin: 0;
+    color: black;
+    font-size: 4rem;
+}
+
+#comer p {
+    top: 10px;
+    left: 10px;
+}
+
+#jugar p {
+    top: 10px;
+    right: 10px;
+}
+
+#pelear p {
+    bottom: 10px;
+    left: 10px;
+}
+
+#dormir p {
+    bottom: 10px;
+    right: 10px;
+}
+
+
+
+.gormiti-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+#gormiti {
+    height: 10em;
+}
+
+.nombre {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 10px;
+}
